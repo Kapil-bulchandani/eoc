@@ -151,14 +151,16 @@ primary_navigation:
             url: "#content1"
   - name: Evidence Plans
     children:
-      - name: Learning Agendas
-        url: "#main-content"
+      - name: Summary
+        url: "/evidence-plans/summary/"
+      - name: Learning Agenda
+        url: "/evidence-plans/learning-agenda/"
       - name: Capacity Assessments
-        url: "#main-content"
+        url: "/evidence-plans/capacity-assessments/"
       - name: Annual Evaluation Plans
-        url: "#main-content"
-      - name: Evaluation Policies
-        url: "#main-content"
+        url: "/evidence-plans/annual-evaluation-plan/"
+      - name: Evaluation Policy
+        url: "/evidence-plans/evaluation-policies/"
   - name: Resources
     url: "#main-content"
 
@@ -192,6 +194,12 @@ collections:
     output: true
     permalink: /:path/
   members:
+    output: true
+  evaluation-policy:
+    output: true
+  annual-evaluation-plans:
+    output: true
+  other-agencies:
     output: true
 
 permalink: pretty
