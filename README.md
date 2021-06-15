@@ -199,6 +199,7 @@ docker-compose run ruby bundle exec jekyll build
 Note that when built by Federalist, `npm run federalist` is used instead of
 `npm run build`.
 
+
 Open your web browser to [localhost:4000](http://localhost:4000/) to view your
 site.
 
