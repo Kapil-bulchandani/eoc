@@ -37,11 +37,13 @@ This is used in blog posts. The index page can be found at blog/index.html
 
                     <div class="">
                         <div class="grid-row">
-                            <div class="tablet:grid-col-4"> <a href="{{ annual-evaluation-plans.plan-link }}" target="_blank">
-                                <img class="usa-media_block-img" src="{{site.baseurl}}/{{ annual-evaluation-plans.agency-logo }}" alt="agency logo" width="75"></a> </div>
-                            <div class="tablet:grid-col-8">  <p style="font-size:125%;line-height:1;margin-bottom:.5em;margin-top:.5em;">{{ annual-evaluation-plans.agency-name }}</p><a href="{{ annual-evaluation-plans.plan-link }}" target="_blank">
-                                <p style="line-height:1;margin-bottom:.25em;margin-top:.5em;">FY22 Evaluation Plan</p>
-                            </a>  </div>
+                            <div class="tablet:grid-col-4">
+                                <img class="usa-media_block-img" src="{{site.baseurl}}/{{ annual-evaluation-plans.agency-logo }}" alt="{{ annual-evaluation-plans.alt }}" width="75">
+                            </div>
+                            <div class="tablet:grid-col-8">
+                                <p style="font-size:125%;line-height:1;margin-bottom:.5em;margin-top:.5em;">{{ annual-evaluation-plans.agency-name }}</p>
+                                <p style="line-height:1;margin-bottom:.25em;margin-top:.5em;"><a href="{{ annual-evaluation-plans.plan-link }}" aria-label="{{ annual-evaluation-plans.aria-label }}" target="_blank">FY22 Evaluation Plan</a></p>
+                             </div>
 
                         </div>
                     </div>
@@ -61,10 +63,12 @@ This is used in blog posts. The index page can be found at blog/index.html
                 <div class="tablet:grid-col-6 container margin-bottom-4">
                     <div class="">
                         <div class="grid-row">
-                            <div class="tablet:grid-col-4"><a href="{{ evaluation-policy.plan-link }}" target="_blank">
-                                <img class="usa-media_block-img" src="{{site.baseurl}}/{{ evaluation-policy.agency-logo }}" alt="agency logo" width="75"></a></div>
-                            <div class="tablet:grid-col-8"><p style="font-size:125%;line-height:1;margin-bottom:.5em;margin-top:.5em;">{{ evaluation-policy.agency-name }}</p><a href="{{ evaluation-policy.plan-link }}" target="_blank">
-                                <p style="line-height:1;margin-bottom:.25em;margin-top:.5em;">Agency Evaluation Policy</p></a></div>
+                            <div class="tablet:grid-col-4">
+                                <img class="usa-media_block-img" src="{{site.baseurl}}/{{ evaluation-policy.agency-logo }}" alt="{{ evaluation-policy.alt }}" width="75"></div>
+                            <div class="tablet:grid-col-8">
+                                <p style="font-size:125%;line-height:1;margin-bottom:.5em;margin-top:.5em;">{{ evaluation-policy.agency-name }}</p>
+                                <p style="line-height:1;margin-bottom:.25em;margin-top:.5em;">  <a href="{{ evaluation-policy.plan-link }}" aria-label="{{ evaluation-policy.aria-label }}" target="_blank">Agency Evaluation Policy</a></p>
+                            </div>
 
                         </div>
                     </div>
@@ -80,10 +84,13 @@ This is used in blog posts. The index page can be found at blog/index.html
         <div class="tablet:grid-col-6 container margin-bottom-4">
             <div class="">
                 <div class="grid-row">
-                    <div class="tablet:grid-col-4"><a href="{{ other-agencies.plan-link }}" target="_blank">
-                        <img class="usa-media_block-img" src="{{site.baseurl}}/{{ other-agencies.agency-logo }}" alt="agency logo" width="75"></a></div>
-                    <div class="tablet:grid-col-8"><p style="font-size:125%;line-height:1;margin-bottom:.5em;margin-top:.5em;">{{ other-agencies.agency-name }}</p><a href="{{ other-agencies.plan-link }}" target="_blank">
-                        <p style="line-height:1;margin-bottom:.25em;margin-top:.5em;">Agency Evaluation Policy</p></a></div>
+                    <div class="tablet:grid-col-4">
+                        <img class="usa-media_block-img" src="{{site.baseurl}}/{{ other-agencies.agency-logo }}" alt="{{ other-agencies.alt }}" width="75">
+                    </div>
+                    <div class="tablet:grid-col-8">
+                        <p style="font-size:125%;line-height:1;margin-bottom:.5em;margin-top:.5em;">{{ other-agencies.agency-name }}</p>
+                        <p style="line-height:1;margin-bottom:.25em;margin-top:.5em;"> <a href="{{ other-agencies.plan-link }}" aria-label="{{ other-agencies.aria-label }}"target="_blank">Agency Evaluation Policy</a></p>
+                    </div>
 
                 </div>
             </div>

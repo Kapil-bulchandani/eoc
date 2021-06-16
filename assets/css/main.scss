@@ -1,3 +1,6 @@
+//custom scss files
+@import "../../_sass/_resources";
+
 /*-------------------------------------*/
 .bg-gradient {
   background: linear-gradient(52deg, #162e51 25%, #28a0cb 100%);
@@ -7,13 +10,59 @@
   cursor: pointer;
 }
 
+.card-tag {
+  font-size: .9rem;
+  margin-top: .2em;
+  margin-bottom: .15em;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: #323a45;
+ }
+ .text-container {
+  height: 13rem;
+ }
+ .shadow-1 {
+   padding: 15px;
+ }
+ .link-type {
+  font-size: .9rem;
+  font-weight: 700;
+  color: #76766a;
+ }
+ .usa-graphic-list .usa-graphic-list__row:last-child .usa-media-block {
+  margin-bottom: 0;
+  display: block;
+}
+.usa-footer__logo-img {
+  max-width: 4rem;
+}
+.txt-align-footer {
+  padding-top: 1.2rem;
+  padding-left: 0.6rem;
+}
 /* ---------------- IPAD CSS ----------------------- */
 @media (max-width: 768px) {
-  
+  .text-container {
+    height: 18rem;
+   }
+   .txt-align-footer {
+    padding-top: .5rem;
+    padding-left: 0.6rem;
+}
 }
 /* ---------------- MOBILE CSS ----------------------- */
 @media screen and (max-width: 640px) {
-  
+  .text-container {
+    height: 11rem;
+   }
+  .count {
+    margin-top: 1.06rem;
+  }
+  .txt-align-footer {
+    padding-top: 1.5rem;
+    padding-left: 0.6rem;
+  }
 }
 
 @media screen and (max-width: 1025px) {

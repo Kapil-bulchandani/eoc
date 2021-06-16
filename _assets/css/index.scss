@@ -73,7 +73,7 @@ html {
 
 @media screen and (max-width: 640px) {
   .usa-logo img {
-    height: 45px;
+    max-width: 50%;
   }
 }
 
@@ -230,7 +230,7 @@ html {
 }
 @media screen and (max-width: 768px) {
   img {
-    max-width: 50%;
+    max-width: 33%;
   }
 }
 
