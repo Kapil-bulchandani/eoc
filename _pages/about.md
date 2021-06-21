@@ -6,7 +6,7 @@ permalink: /about/
 
 <section class="grid-container padding-left-0 padding-right-1">
 <h2>What is Evaluation.gov</h2>
-<p>Evaluation.gov communicates how the Federal Government is planning for, building, and using varied forms of evidence, including evaluation, to inform effective policy-making.</p>
+<p>Evaluation.gov a central location for the agency plans and policies that guide evaluation efforts across the Federal government and serves as a resource to support and build the Federal evaluation community.</p>
         <p>This includes:</p>
         <ul>
             <li>The Evaluation Officer Council and their activities;</li>
@@ -16,9 +16,7 @@ permalink: /about/
         <p>Resources to support and improve evidence-building activities and their use, including leading examples of how Federal evaluation is helping to answer priority questions about mission and operational effectiveness.</p>
 <h2>About the OMB Evidence Team</h2>
     The OMB Evidence Team at the Office of Management and Budget is committed to developing, building, producing and using evidence and evaluation as a tool to improve government-wide effectiveness. Toward this end, the Team coordinates and champions Evidence Act implementation across the Federal Government. Through support of the Evaluation Officer Council, engagement with the Federal evaluation community, and development of guidance and resources, the Evidence Team advances the Administration’s goal to better integrate evidence and rigorous evaluation in budget, management, operational, and policy decisions. The Evidence Team maintains this site with the support of GSA. <br />
-    <p>Meet the Evidence Team:<br />
-    <a href="mailto:evidence@omb.eop.gov">Contact</a> the Evidence Team</p>
-
+    <p><a href="mailto:evidence@omb.eop.gov">Contact</a> the Evidence Team</p>
 <h2 class="site-preview-heading">Site Information and Policies</h2>
 
 <div class="usa-accordion usa-accordion--bordered">
