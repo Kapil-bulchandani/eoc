@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Agency Name
-permalink: /agencyname/
+title: Agency
+permalink: /agency/
 ---
 
 
