@@ -1,0 +1,22 @@
+{% comment %}
+This appears at the top of the page letting the user know it's an official government website
+{% endcomment %}
+
+<nav aria-label="Secondary navigation,">
+        <ul class="usa-sidenav">
+            <li class="usa-sidenav__item">
+                <a href="{{site.baseurl}}/evidence-plans/summary/" class="{% if page.title == 'Summary' %} usa-current{% endif %}">Summary</a>
+            </li><li class="usa-sidenav__item">
+            <a href="{{site.baseurl}}/evidence-plans/learning-agenda/ " class="{% if page.title == 'Learning Agenda' %} usa-current{% endif %}">Learning Agenda</a>
+        </li><li class="usa-sidenav__item">
+            <a href="{{site.baseurl}}/evidence-plans/capacity-assessments/" class="{% if page.title == 'Capacity Assessments' %} usa-current{% endif %}">Capacity Assessments </a>
+        </li>
+            <li class="usa-sidenav__item">
+                <a href="{{site.baseurl}}/evidence-plans/annual-evaluation-plan/" class="{% if page.title == 'Annual Evaluation Plans' %} usa-current{% endif %}">Annual Evaluation Plans</a>
+            </li>
+            <li class="usa-sidenav__item">
+                <a href="{{site.baseurl}}/evidence-plans/evaluation-policies/" class="{% if page.title == 'Evaluation Policy' %} usa-current{% endif %}">Evaluation Policy</a>
+            </li>
+
+        </ul>
+</nav>

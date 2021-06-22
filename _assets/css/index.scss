@@ -73,7 +73,7 @@ html {
 
 @media screen and (max-width: 640px) {
   .usa-logo img {
-    height: 45px;
+    max-width: 50%;
   }
 }
 
@@ -223,14 +223,14 @@ html {
 }
 .card__members .right,
 .card__members .left {
-  height: 135px;
+  height: 85px;
   @media screen and (max-width: 768px) {
     height: 115px;
   }
 }
 @media screen and (max-width: 768px) {
   img {
-    max-width: 50%;
+    max-width: 33%;
   }
 }
 

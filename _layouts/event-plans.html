@@ -1,0 +1,123 @@
+---
+layout: default
+---
+
+{% comment %}
+This is used in blog posts. The index page can be found at blog/index.html
+{% endcomment %}
+
+
+<section class="usa-graphic-list usa-section sml-margin bg-gradient">
+    <div class="grid-container">
+        <div class="grid-row grid-gap">
+            <div class="tablet:grid-col">
+                <div class="text-white font-ui-2xl margin-bottom-0 text-bold">Evidence Plans</div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="usa-graphic_list clearfix ">
+    <div class="clearfix grid-container grey-back padding-top-3 padding-bottom-2">
+<div class="grid-row grid-gap">
+    <div class="tablet:grid-col-3">
+        {% include sidenav-evidence-plans.html %}
+    </div>
+    <div class="tablet:grid-col-9 ">
+        <h1 class="title margin-top-neg-1">{{page.title}}</h1>
+        {{ content }}
+
+
+        {% if page.title == 'Annual Evaluation Plans' %}
+            <h1>Annual Evaluation Plans by Agency</h1>
+
+        <div class="grid-containe padding-left-0 padding-right-0">
+            <div class="usa-graphic-list__row grid-row grid-gap padding-top-0">
+                {% for annual-evaluation-plans in site.annual-evaluation-plans %}
+                <div class="tablet:grid-col-6 container margin-bottom-4">
+
+                    <div class="">
+                        <div class="grid-row">
+                            <div class="tablet:grid-col-4">
+                                <img class="usa-media_block-img" src="{{site.baseurl}}/{{ annual-evaluation-plans.agency-logo }}" alt="{{ annual-evaluation-plans.alt }}" width="75">
+                            </div>
+                            <div class="tablet:grid-col-8">
+                                <p style="font-size:125%;line-height:1;margin-bottom:.5em;margin-top:.5em;">{{ annual-evaluation-plans.agency-name }}</p>
+                                <p style="line-height:1;margin-bottom:.25em;margin-top:.5em;"><a href="{{ annual-evaluation-plans.plan-link }}" aria-label="{{ annual-evaluation-plans.aria-label }}" target="_blank">FY22 Evaluation Plan</a></p>
+                             </div>
+
+                        </div>
+                    </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+
+        {% endif %}
+
+        {% if page.title == 'Evaluation Policy' %}
+        <h1>Evaluation Policy by Agency</h1>
+
+        <div class="grid-containe padding-left-0 padding-right-0">
+            <div class="usa-graphic-list__row grid-row grid-gap padding-top-0">
+                {% for evaluation-policy in site.evaluation-policy %}
+                <div class="tablet:grid-col-6 container margin-bottom-4">
+                    <div class="">
+                        <div class="grid-row">
+                            <div class="tablet:grid-col-4">
+                                <img class="usa-media_block-img" src="{{site.baseurl}}/{{ evaluation-policy.agency-logo }}" alt="{{ evaluation-policy.alt }}" width="75"></div>
+                            <div class="tablet:grid-col-8">
+                                <p style="font-size:125%;line-height:1;margin-bottom:.5em;margin-top:.5em;">{{ evaluation-policy.agency-name }}</p>
+                                <p style="line-height:1;margin-bottom:.25em;margin-top:.5em;">  <a href="{{ evaluation-policy.plan-link }}" aria-label="{{ evaluation-policy.aria-label }}" target="_blank">Agency Evaluation Policy</a></p>
+                            </div>
+
+                        </div>
+                    </div>
+                </a>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+        <h1>Other Agencies</h1>
+        <div class="grid-containe padding-left-0 padding-right-0">
+            <div class="usa-graphic-list__row grid-row grid-gap padding-top-0">
+        {% for other-agencies in site.other-agencies %}
+        <div class="tablet:grid-col-6 container margin-bottom-4">
+            <div class="">
+                <div class="grid-row">
+                    <div class="tablet:grid-col-4">
+                        <img class="usa-media_block-img" src="{{site.baseurl}}/{{ other-agencies.agency-logo }}" alt="{{ other-agencies.alt }}" width="75">
+                    </div>
+                    <div class="tablet:grid-col-8">
+                        <p style="font-size:125%;line-height:1;margin-bottom:.5em;margin-top:.5em;">{{ other-agencies.agency-name }}</p>
+                        <p style="line-height:1;margin-bottom:.25em;margin-top:.5em;"> <a href="{{ other-agencies.plan-link }}" aria-label="{{ other-agencies.aria-label }}"target="_blank">Agency Evaluation Policy</a></p>
+                    </div>
+
+                </div>
+            </div>
+            </a>
+        </div>
+        {% endfor %}
+            </div>
+        </div>
+
+        {% endif %}
+
+    </div>
+</div>
+
+
+    </div>
+</section>
+
+<style>
+    #small-agency {
+    width: 46.83%;
+    margin: 13px;
+}
+@media only screen and (max-width: 639px) {
+.title{
+margin-top: 1.1rem;
+}
+}
+
+</style>

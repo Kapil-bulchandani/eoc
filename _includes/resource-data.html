@@ -1,0 +1,67 @@
+<!--********Generates resource catalog items. Individual cards live in the in the _resources folder**************-->
+
+<div class="usa-media-block tablet:grid-col-9">
+    <p class="filter-count card-tag margin-top-0 text-gray-50 text-thin count"></p>
+    <div class="resources">
+     
+                {% for resources in site.resources %}
+                        <div class="tablet:grid-col-4 grid-spacing policy {{ resources.filters }}" >
+
+                            <!--sets border logic statements for resources-->
+                            {% if resources.filters contains 'legislation' %}
+                            <div class="shadow-1 legislation-border">
+                                {% endif %}
+                            {% if resources.filters contains 'guidance' %}
+                            <div class="shadow-1 guidance-border">
+                                {% endif %}
+                                {% if resources.filters contains 'budget-discussions' %}
+                                <div class="shadow-1 budget-discussions-border">
+                                    {% endif %}
+                                    {% if resources.filters contains 'evidence-clearinghouse' %}
+                                    <div class="shadow-1 evidence-clearinghouse-border ">
+                                        {% endif %}
+                                        {% if resources.filters contains 'quick-reference' %}
+                                        <div class="shadow-1 quick-reference-border ">
+                                            {% endif %}
+        
+                                            <div class="text-container">
+                                                 {% if resources.filters contains 'legislation' %}
+                                                <span class="card-tag">Legislation</span>
+                                                {% endif %}
+                                                {% if resources.filters contains 'guidance' %}
+                                                <span class="card-tag">Guidance</span>
+                                                {% endif %}
+                                                {% if resources.filters contains 'budget-discussions' %}
+                                                <span class="card-tag">Budget Discussions</span>
+                                                {% endif %}
+                                                {% if resources.filters contains 'evidence-clearinghouse' %}
+                                                <span class="card-tag">Evidence Clearinghouse</span>
+                                                {% endif %}
+                                                {% if resources.filters contains 'quick-reference' %}
+                                                <span class="card-tag">Quick Reference</span>
+                                                {% endif %}
+                                                
+                                                {% if resources.external_url %}
+                                                <p class="title-resources"><a class="text-ink text-no-underline" href="http://{{ resources.external_url }}">{{ resources.title }}</a></p>
+                                                {% endif %}
+                                                {% if resources.permalink %}
+                                                <p class="title-resources"><a class="text-ink text-no-underline" href="{{ site.baseurl }}{{ resources.permalink }}">{{ resources.title }}</a></p>
+                                                {% endif %}
+                                                {% if resources.doc-link %}
+                                                <p class="title-resources"><a class="text-ink text-no-underline" href="{{ site.baseurl }}/{{ resources.doc-link }}">{{ resources.title }}</a></p>
+                                                {% endif %}
+                                                {% if resources.type contains 'link' %}
+                                                <p class="link-type">Link</p>
+                                                {% endif %}
+                                                {% if resources.type contains 'pdf' %}
+                                                <p class="link-type">PDF</p>
+                                                {% endif %}
+                                                <!--for 508 accessibility-->
+                                            </div>
+                                        </div>
+        
+                                    </div>			
+                {% endfor %}
+ 
+    </div>
+</div>
