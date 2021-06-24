@@ -1,6 +1,6 @@
 ---
 layout: agency
-permalink: /agencies/Department-of-Health-and-Human-Services/
+permalink: /agencies/department-of-health-and-human-services/
 title: Department of Health and Human Resources
 agency-name: Department of Health and Human Resources
 agency-logo: assets/images/agency-seals/health_and_human_department_seal.png
